@@ -196,7 +196,6 @@ $signature = base64_encode(hash_hmac('sha256', $message, $esewa_secret, true));
         <div id="esewa-form" class="payment-form esewa-theme">
             <div class="esewa-notice">
                 Redirecting to eSewa test gateway...<br>
-                <small>Test ID: 9806800001 • Password: Nepal@123 • OTP: 123456</small>
             </div>
 
             <form action="https://rc-epay.esewa.com.np/api/epay/main/v2/form" method="POST" id="esewa-real-form">
@@ -237,3 +236,4 @@ $signature = base64_encode(hash_hmac('sha256', $message, $esewa_secret, true));
 </body>
 
 </html>
+
