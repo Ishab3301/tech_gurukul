@@ -27,7 +27,7 @@ if (!$course) {
 $base_transaction_uuid = 'TG-' . $course_id . '-' . $student_id . '-' . time();
 
 // Generate signature server-side (correct & secure way)
-$esewa_secret = '8gBm/:&EnhH.1/q';  // Official eSewa test secret key
+$esewa_secret = 'Your Secret key here';  // Official eSewa test secret key
 $message = "total_amount={$course['price']},transaction_uuid={$base_transaction_uuid},product_code=EPAYTEST";
 $signature = base64_encode(hash_hmac('sha256', $message, $esewa_secret, true));
 ?>
@@ -235,4 +235,5 @@ $signature = base64_encode(hash_hmac('sha256', $message, $esewa_secret, true));
 </div>
 
 </body>
+
 </html>
