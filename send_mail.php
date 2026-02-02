@@ -17,8 +17,8 @@ function sendEnrollmentEmail($to_email, $student_name, $course_title, $status, $
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'ishab3301@gmail.com';        
-        $mail->Password   = 'hoxx jsuy glhx vtpz';           
+        $mail->Username   = 'mail';        
+        $mail->Password   = 'password';           
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
@@ -71,4 +71,5 @@ function sendEnrollmentEmail($to_email, $student_name, $course_title, $status, $
         return false;
     }
 }
+
 ?>
